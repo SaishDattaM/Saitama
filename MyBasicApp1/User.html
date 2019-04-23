@@ -2,11 +2,17 @@
 
 <head>
     <title>Hello User</title>
-
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>window.jQuery||document.write("<script src='jQuery.js'><\/script>")</script>
     <link rel="stylesheet" href="CSS/genricCSS.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+<script>
+$(document).ready(function(){
+ $('#studetails').html('Enter valid user details');
+});
+</script>
 <body>
         <div class="form-group">
             <div>
@@ -18,16 +24,15 @@
         <label for="StudentName" > </label>
         <input type="text" id="StudentName" placeholder=" STUDENT NAME"></div>
         <div>
-        <label for="StudentID" > </label>
+            <label for="StudentID" > </label>
         <input type="text" id="StudentID" placeholder="STUDENT ID"> </div>
         <div><label for="gender">DOB</label>
         <input type="date" placeholder="DOB"></div>
         <div>
         <label for="gender">Gender</label>
-        <input type="radio" id="gender"> Male
-    </div>
-    <div>
-        <input type="radio" id="gender"> Female 
+        <input type="radio" id="gender" name="gender"> Male
+    
+        <input type="radio" id="gender" name="gender"> Female 
         <label for="Standard"></label>
     </div>
     <div> <input type="text" id="Standard" placeholder="Standard-Section">

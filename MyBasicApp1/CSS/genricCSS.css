@@ -21,10 +21,11 @@
  }
  input
  {
-     display: block;
+  
     width: 30%;
     padding: 12px 40px;
     margin: 8px 0;
+  
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
