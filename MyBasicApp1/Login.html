@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head><title>Login</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 <link rel="stylesheet" href="CSS/genricCSS.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -8,25 +9,27 @@
         <marquee><h1> ADMIN LOGIN PAGE</h1></marquee>
     </header>
     <div class="form-group">
-<form>
+<form id="Login_form"> 
     <div>
-   <input type="text" required placeholder="User Name"></div>
+   <input type="text" id="LoginUN"  placeholder="User Name"></div>
    <div>
-       <input type="text" required placeholder="Password">
+       <input type="text" id="LoginPWD"  placeholder="Password">
    </div>
     <div>
-        <button type="submit" onclick="window.location.href='User.html'" class="btn btn-primary">Login</button>
+        <button type="submit"  class="btn btn-primary">Login</button>
     </div>
 <div>
     <a href="">Forgot Password</a>
     <a href="SignUp.html"> Sign Up </a>
 </div>
 </form>
+<div ><p id="valmsg"> </p> </div> <!-- This  displays  Validation messages -->
 </div>
 <footer >
     <div style ="position:absolute ;bottom:5px; background-color: aquamarine;">
 
     Contact no: 9993334444</div>
 </footer>
+<script src="JS/Val.js"></script>
 </body>
 </html>
