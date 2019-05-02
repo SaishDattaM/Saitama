@@ -13,10 +13,10 @@ $('#Login_form').submit(function(e){
     var validation = true;
 // Validating Username Field.
 if(username.length<1)
-{    // $('#valmsg').text("* Username and Password are mandatory *");
+{    
 $('#LoginUN').after('<span class="error">This field is required</span>');
 validation = false;
-//$("#LoginUN").focus();
+
 }else
 if (!(username.length >= 6 && username.length <= 8 && valtest==true)) {
 $('#LoginUN').after('<span class="error">Please enter between 6 and 8 alphabets only</span>');
@@ -38,6 +38,7 @@ if(validation == true)
 window.location.href='User.html'
    }
    });
+   //User form validations
 $('#userForm').validate({
     rules : {
         StudentName: 'required',
@@ -64,6 +65,7 @@ $('#userForm').validate({
         form.submit();  
       }
 });
+//SignUp Form Validations
 $('#sigupform').validate({
     rules:{
         name:'required',
